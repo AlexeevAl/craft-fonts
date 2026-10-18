@@ -215,3 +215,16 @@ fn thai_fonts_cover_thai_text() {
         ),
     );
 }
+
+#[test]
+fn hebrew_fonts_cover_hebrew_text() {
+    covers(
+        "Hebr",
+        concat!(
+            "אבגדהוזחטיכךלמםנןסעפףצץקרשת",
+            "\u{05B0}\u{05B4}\u{05B7}\u{05B8}\u{05B9}\u{05BC}\u{05C1}\u{05C2}",
+            "\u{05BE}\u{05F3}\u{05F4}₪",
+            "0123456789.,:;()\"'-",
+        ),
+    );
+}
